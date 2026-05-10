@@ -11,8 +11,8 @@ export default function Pricing() {
 
           <div className="pricing-card fade-up">
             <div className="pricing-tier">Starter</div>
-            <div className="pricing-price"><sup>$</sup>847<span className="period">/mo</span></div>
-            <div className="pricing-setup">+ $1,247 one-time setup</div>
+            <div className="pricing-price"><sup>$</sup>947<span className="period">/mo</span></div>
+            <div className="pricing-setup">+ $1,497 one-time setup</div>
             <div className="pricing-desc">Sofia handles every incoming call — 24/7, no exceptions</div>
             <div className="pricing-divider"></div>
             <ul className="pricing-features">
@@ -31,7 +31,7 @@ export default function Pricing() {
             <div className="pricing-badge">MOST POPULAR</div>
             <div className="pricing-tier">Complete</div>
             <div className="pricing-price"><sup>$</sup>1,497<span className="period">/mo</span></div>
-            <div className="pricing-setup">+ $1,997 one-time setup</div>
+            <div className="pricing-setup">+ $2,497 one-time setup</div>
             <div className="pricing-desc">Sofia + a custom CRM built around your business</div>
             <div className="pricing-divider"></div>
             <ul className="pricing-features">

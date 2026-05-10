@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import BookNavbar from "@/components/BookNavbar";
 import Footer from "@/components/Footer";
+import BookingCalendar from "@/components/BookingCalendar";
 
 export const metadata: Metadata = {
   title: "Book a Free Demo — AutoPilot AI",
@@ -20,8 +21,7 @@ export default function BookPage() {
               Pick a time that works for you. We&apos;ll walk you through exactly how Sofia answers calls, qualifies leads, and books jobs for an HVAC business like yours — then answer every question you have. No pressure, no commitment.
             </p>
             <div className="book-calendar">
-              {/* Calendar embed script goes here */}
-              <p className="book-calendar-placeholder">Calendar loading…</p>
+              <BookingCalendar />
             </div>
           </div>
         </div>
