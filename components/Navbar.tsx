@@ -22,7 +22,6 @@ export default function Navbar() {
           <li><a href="#problem" onClick={closeNav}>Problem</a></li>
           <li><a href="#how-it-works" onClick={closeNav}>How It Works</a></li>
           <li><a href="#results" onClick={closeNav}>Results</a></li>
-          <li><a href="#pricing" onClick={closeNav}>Pricing</a></li>
           <li><a href="#faq" onClick={closeNav}>FAQ</a></li>
           <li className="nav-mobile-cta">
             <a href="/book" className="btn-primary" onClick={closeNav} target="_blank" rel="noopener noreferrer">Book a Demo →</a>

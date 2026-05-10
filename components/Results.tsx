@@ -10,7 +10,7 @@ export default function Results() {
         <div className="stats-grid stagger">
           <div className="stat-card fade-up">
             <span className="stat-value" data-target="14" data-prefix="$" data-suffix="k+/mo">$0</span>
-            <div className="stat-label">Average additional monthly revenue recovered by HVAC businesses using Sofia</div>
+            <div className="stat-label">Up to $14k+/mo in recovered revenue — based on 10-20 missed calls/month at an average ticket of $1,000+</div>
           </div>
           <div className="stat-card fade-up">
             <span className="stat-value" data-target="100" data-suffix="% answered">0%</span>
