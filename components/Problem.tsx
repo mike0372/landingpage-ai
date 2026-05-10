@@ -27,6 +27,9 @@ export default function Problem() {
             <p>Half your leads call after 6 PM or on weekends. Without 24/7 coverage, you&apos;re handing those emergency jobs to whoever answers.</p>
           </div>
         </div>
+        <div className="section-cta">
+          <a href="/book" className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Fix It — Book a Free Demo →</a>
+        </div>
       </div>
     </section>
   );

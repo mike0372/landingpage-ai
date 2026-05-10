@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell($env:PATH)"
+      "PowerShell($env:PATH)",
+      "PowerShell(\\(Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing\\).StatusCode)",
+      "PowerShell(Get-Command git -ErrorAction SilentlyContinue)"
     ]
   }
 }

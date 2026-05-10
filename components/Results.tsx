@@ -9,21 +9,24 @@ export default function Results() {
         </div>
         <div className="stats-grid stagger">
           <div className="stat-card fade-up">
-            <span className="stat-value" data-target="100" data-prefix="$" data-suffix="k+/mo">$0</span>
-            <div className="stat-label">Recovered revenue per month for avg. HVAC business</div>
+            <span className="stat-value" data-target="14" data-prefix="$" data-suffix="k+/mo">$0</span>
+            <div className="stat-label">Average additional monthly revenue recovered by HVAC businesses using Sofia</div>
           </div>
           <div className="stat-card fade-up">
             <span className="stat-value" data-target="100" data-suffix="% answered">0%</span>
-            <div className="stat-label">Every call answered — zero missed, zero sent to voicemail</div>
+            <div className="stat-label">Every inbound call answered — zero missed, zero voicemails</div>
           </div>
           <div className="stat-card fade-up">
-            <span className="stat-value" data-target="30" data-prefix="< " data-suffix="s to book">&lt;0s</span>
-            <div className="stat-label">Time from first ring to confirmed job booking</div>
+            <span className="stat-value" data-target="45" data-prefix="< " data-suffix="s">&lt;0s</span>
+            <div className="stat-label">From first ring to a confirmed job on your calendar</div>
           </div>
           <div className="stat-card fade-up">
-            <span className="stat-value" data-target="24" data-suffix="/7 coverage">0/7</span>
+            <span className="stat-value" data-target="24" data-suffix="/7 active">0/7</span>
             <div className="stat-label">Always on — nights, weekends, holidays, no exceptions</div>
           </div>
+        </div>
+        <div className="section-cta">
+          <a href="/book" className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Start Recovering Revenue →</a>
         </div>
       </div>
     </section>

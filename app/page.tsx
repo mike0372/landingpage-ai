@@ -4,6 +4,7 @@ import Problem from "@/components/Problem";
 import HowItWorks from "@/components/HowItWorks";
 import Results from "@/components/Results";
 import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import ScrollAnimations from "@/components/ScrollAnimations";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <HowItWorks />
       <Results />
       <Pricing />
+      <FAQ />
       <Footer />
       <ScrollAnimations />
     </>

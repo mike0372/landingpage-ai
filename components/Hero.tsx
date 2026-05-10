@@ -35,7 +35,7 @@ export default function Hero() {
             </p>
             <div className="hero-btns">
               <a href="#how-it-works" className="btn-secondary btn-lg">See How It Works</a>
-              <a href="#pricing" className="btn-primary btn-lg">Book a Free Demo →</a>
+              <a href="/book" className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Free Demo →</a>
             </div>
           </div>
 
@@ -48,14 +48,14 @@ export default function Hero() {
                 <div className="phone-header">
                   <div className="phone-avatar">AI</div>
                   <div className="phone-contact">
-                    <div className="phone-contact-name">AutoPilot AI Receptionist</div>
+                    <div className="phone-contact-name">Sofia · AI Receptionist</div>
                     <div className="phone-contact-status">Active call</div>
                   </div>
                   <div className="call-timer">{timerText}</div>
                 </div>
                 <div className="phone-messages">
                   <div className="msg msg-ai">
-                    <div className="msg-label">AutoPilot AI</div>
+                    <div className="msg-label">Sofia</div>
                     Thanks for calling Air Pro HVAC! Is this an emergency repair or a new install?
                   </div>
                   <div className="msg msg-user">
@@ -63,7 +63,7 @@ export default function Hero() {
                     My AC stopped working — it&apos;s 97°F outside
                   </div>
                   <div className="msg msg-ai">
-                    <div className="msg-label">AutoPilot AI</div>
+                    <div className="msg-label">Sofia</div>
                     Got it — emergency repair. I have a tech available today at 2 PM or 4 PM. Which works?
                   </div>
                   <div className="msg msg-user">

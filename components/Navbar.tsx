@@ -19,14 +19,16 @@ export default function Navbar() {
       <div className="container nav-inner">
         <a href="#hero" className="logo">AutoPilot <span>AI</span></a>
         <ul className={`nav-links${navOpen ? ' open' : ''}`} id="navLinks">
+          <li><a href="#problem" onClick={closeNav}>Problem</a></li>
           <li><a href="#how-it-works" onClick={closeNav}>How It Works</a></li>
           <li><a href="#results" onClick={closeNav}>Results</a></li>
           <li><a href="#pricing" onClick={closeNav}>Pricing</a></li>
-          <li style={{ display: 'block' }}>
-            <a href="#pricing" className="btn-primary" onClick={closeNav}>Book a Demo</a>
+          <li><a href="#faq" onClick={closeNav}>FAQ</a></li>
+          <li className="nav-mobile-cta">
+            <a href="/book" className="btn-primary" onClick={closeNav} target="_blank" rel="noopener noreferrer">Book a Demo →</a>
           </li>
         </ul>
-        <a href="#pricing" className="btn-primary nav-cta">Book a Demo</a>
+        <a href="/book" className="btn-primary nav-cta" target="_blank" rel="noopener noreferrer">Book a Demo →</a>
         <div
           className="hamburger"
           onClick={() => setNavOpen(o => !o)}

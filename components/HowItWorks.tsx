@@ -16,14 +16,25 @@ export default function HowItWorks() {
           </div>
           <div className="step fade-up">
             <div className="step-num">🤖</div>
-            <h3>AI Answers, Qualifies &amp; Books</h3>
-            <p>AutoPilot picks up instantly, asks the right questions, checks your real availability, and books the job — all in under 2 minutes.</p>
+            <h3>Sofia Answers, Qualifies &amp; Books</h3>
+            <p>Sofia picks up instantly, asks the right questions, checks your real availability, and books the job — all in under 2 minutes.</p>
           </div>
           <div className="step fade-up">
             <div className="step-num">📅</div>
             <h3>Job Appears in Your Calendar</h3>
             <p>The booking syncs to your scheduling software automatically. Wake up to a full calendar — without lifting a finger.</p>
           </div>
+        </div>
+        <div className="hiw-video">
+          <iframe
+            src="https://www.youtube.com/embed/KLJErd2Szn0"
+            title="How Sofia Works"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+        <div className="section-cta">
+          <a href="/book" className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Free Demo →</a>
         </div>
       </div>
     </section>
