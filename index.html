@@ -994,6 +994,44 @@
       section { padding: 80px 0; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
     }
+
+    /* ── FAQ ── */
+    #faq { background: var(--bg); }
+
+    .faq-header { text-align: center; margin-bottom: 52px; }
+    .faq-header .section-sub { margin: 0 auto; }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 32px;
+    }
+
+    .faq-q {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+
+    .faq-a {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .faq-cta {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -1161,8 +1199,8 @@
       </div>
       <div class="stats-grid stagger">
         <div class="stat-card fade-up">
-          <span class="stat-value" data-target="100" data-prefix="$" data-suffix="k+/mo">$0</span>
-          <div class="stat-label">Recovered revenue per month for avg. HVAC business</div>
+          <span class="stat-value" data-target="14" data-prefix="$" data-suffix="k+/mo">$0</span>
+          <div class="stat-label">Up to $14k+/mo in recovered revenue — based on 10-20 missed calls/month at an average ticket of $1,000+</div>
         </div>
         <div class="stat-card fade-up">
           <span class="stat-value" data-target="100" data-suffix="% answered">0%</span>
@@ -1245,6 +1283,25 @@
           <div class="pricing-guarantee">🛡️ First install guaranteed or full refund</div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Common Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item fade-up">
+          <div class="faq-q">How much does it cost?</div>
+          <div class="faq-a">Pricing is tailored to your business size and call volume. Book a call and we'll tell you exactly what makes sense for you.</div>
+        </div>
+      </div>
+      <div class="faq-cta">
+        <a href="#pricing" class="btn-primary btn-lg">Book a Free Demo →</a>
       </div>
     </div>
   </section>
