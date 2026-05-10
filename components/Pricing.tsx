@@ -1,52 +1,49 @@
-export default function Pricing() {
+export default function BookingCTA() {
   return (
-    <section id="pricing">
+    <section id="booking-cta">
+      <div className="cta-orb cta-orb-1" />
+      <div className="cta-orb cta-orb-2" />
+      <div className="cta-grid-overlay" />
+
       <div className="container">
-        <div className="pricing-header">
-          <div className="section-label">Pricing</div>
-          <h2 className="section-title">Simple, Predictable Pricing</h2>
-          <p className="section-sub">Every plan includes a first-install guarantee — if it doesn&apos;t work as promised, you get a full refund. No questions asked.</p>
+        <div className="cta-card fade-up">
+          <div className="cta-card-glow" />
+
+          <div className="cta-badge">
+            <span className="cta-dot" />
+            Taking new clients — limited spots this month
+          </div>
+
+          <h2 className="cta-title">
+            One call away from<br />
+            <span className="cta-title-highlight">never missing another job.</span>
+          </h2>
+
+          <p className="cta-sub">
+            20 minutes. We&apos;ll walk through your current setup, show you exactly how AutoPilot handles your calls, and tell you what it would cost. No pitch decks. No pressure.
+          </p>
+
+          <a
+            href="/book"
+            className="btn-primary cta-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book My Free Demo Call →
+          </a>
+
+          <div className="cta-trust">
+            <span>✓ No contracts</span>
+            <span className="cta-trust-dot" />
+            <span>✓ Live within 48–72 hrs</span>
+            <span className="cta-trust-dot" />
+            <span>✓ First install guaranteed</span>
+          </div>
         </div>
-        <div className="pricing-grid stagger">
 
-          <div className="pricing-card fade-up">
-            <div className="pricing-tier">Starter</div>
-            <div className="pricing-price"><sup>$</sup>947<span className="period">/mo</span></div>
-            <div className="pricing-setup">+ $1,497 one-time setup</div>
-            <div className="pricing-desc">Sofia handles every incoming call — 24/7, no exceptions</div>
-            <div className="pricing-divider"></div>
-            <ul className="pricing-features">
-              <li><span className="check">✓</span> Sofia AI Receptionist (24/7 call answering)</li>
-              <li><span className="check">✓</span> Instant job booking &amp; calendar sync</li>
-              <li><span className="check">✓</span> Lead qualification scripts</li>
-              <li><span className="check">✓</span> SMS confirmation to customer</li>
-              <li><span className="check">✓</span> Monthly performance report</li>
-              <li><span className="check">✓</span> Dedicated onboarding call</li>
-            </ul>
-            <a href="/book" target="_blank" rel="noopener noreferrer" className="btn-secondary pricing-btn">Get Started</a>
-            <div className="pricing-guarantee">🛡️ First install guaranteed or full refund</div>
-          </div>
-
-          <div className="pricing-card featured fade-up">
-            <div className="pricing-badge">MOST POPULAR</div>
-            <div className="pricing-tier">Complete</div>
-            <div className="pricing-price"><sup>$</sup>1,497<span className="period">/mo</span></div>
-            <div className="pricing-setup">+ $2,497 one-time setup</div>
-            <div className="pricing-desc">Sofia + a custom CRM built around your business</div>
-            <div className="pricing-divider"></div>
-            <ul className="pricing-features">
-              <li><span className="check">✓</span> Everything in Starter</li>
-              <li><span className="check">✓</span> Custom CRM built for your AI</li>
-              <li><span className="check">✓</span> Full call log &amp; AI activity tracking</li>
-              <li><span className="check">✓</span> Lead pipeline &amp; follow-up management</li>
-              <li><span className="check">✓</span> AI performance dashboard</li>
-              <li><span className="check">✓</span> Revenue attribution per booking</li>
-              <li><span className="check">✓</span> Priority support (&lt;1hr response)</li>
-            </ul>
-            <a href="/book" target="_blank" rel="noopener noreferrer" className="btn-primary pricing-btn">Get Started →</a>
-            <div className="pricing-guarantee">🛡️ First install guaranteed or full refund</div>
-          </div>
-
+        <div className="cta-inline-faq fade-up">
+          <span className="cta-inline-q">How much does it cost?</span>
+          <span className="cta-inline-a">Pricing is tailored to your business size and call volume. Book a call and we&apos;ll tell you exactly what makes sense for you.</span>
         </div>
       </div>
     </section>
