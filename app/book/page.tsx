@@ -81,7 +81,7 @@ export default function BookPage() {
                   <span className="call-expect-text">By the end, you&apos;ll know if this fits — no pressure either way.</span>
                 </div>
               </div>
-              <p className="call-expect-guarantee">First install guaranteed or full refund. No long-term contracts.</p>
+              <p className="call-expect-guarantee">First install guaranteed or full refund.</p>
             </div>
           </div>
         </div>
