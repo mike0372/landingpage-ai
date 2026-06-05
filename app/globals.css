@@ -1120,6 +1120,76 @@ section { padding: 110px 0; }
   padding: 0 8px;
 }
 
+/* ── BOOK PAGE HEADER STEP TRACK ── */
+.book-steps-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 28px auto 48px;
+  max-width: 560px;
+}
+
+.book-steps-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.book-steps-badge {
+  font-family: var(--font-mono), monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, var(--blue) 0%, var(--cyan) 100%);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(59,130,246,0.45);
+  flex-shrink: 0;
+}
+
+.book-steps-name {
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.book-steps-connector {
+  flex: 1;
+  height: 2px;
+  min-width: 40px;
+  max-width: 80px;
+  background: linear-gradient(90deg, rgba(59,130,246,0.5), rgba(6,182,212,0.4));
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.book-steps-connector::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid rgba(6,182,212,0.6);
+  border-right: 2px solid rgba(6,182,212,0.6);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 480px) {
+  .book-steps-name { display: none; }
+  .book-steps-connector { min-width: 24px; }
+}
+
 /* ── BOOK PAGE STEPS ── */
 .book-step {
   display: flex;

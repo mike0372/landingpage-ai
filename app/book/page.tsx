@@ -17,6 +17,22 @@ export default function BookPage() {
         <div className="container">
           <div className="book-content">
             <div className="section-label">Free 30-Minute Demo</div>
+            <div className="book-steps-track">
+              <div className="book-steps-item">
+                <span className="book-steps-badge">01</span>
+                <span className="book-steps-name">Watch the demo</span>
+              </div>
+              <div className="book-steps-connector" />
+              <div className="book-steps-item">
+                <span className="book-steps-badge">02</span>
+                <span className="book-steps-name">Pick a time</span>
+              </div>
+              <div className="book-steps-connector" />
+              <div className="book-steps-item">
+                <span className="book-steps-badge">03</span>
+                <span className="book-steps-name">Know what to expect</span>
+              </div>
+            </div>
             <h1 className="book-title">See Sofia in Action —<br />Live, On Your Business</h1>
             <p className="book-sub">
               Pick a time that works for you. We&apos;ll walk you through exactly how Sofia answers calls, qualifies leads, and books jobs for an HVAC business like yours — then answer every question you have. No pressure, no commitment.
