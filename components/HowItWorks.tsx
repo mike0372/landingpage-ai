@@ -1,3 +1,5 @@
+import { Phone, Bot, LayoutDashboard } from 'lucide-react';
+
 export default function HowItWorks() {
   return (
     <section id="how-it-works">
@@ -10,19 +12,19 @@ export default function HowItWorks() {
         <div className="steps-container stagger">
           <div className="step-connector"></div>
           <div className="step fade-up">
-            <div className="step-num">📞</div>
+            <div className="step-num"><Phone size={28} strokeWidth={1.75} /></div>
             <h3>Customer Calls Your Number</h3>
             <p>Your existing business number routes directly to AutoPilot AI — no new number, no tech headaches, no changes for customers.</p>
           </div>
           <div className="step fade-up">
-            <div className="step-num">🤖</div>
+            <div className="step-num"><Bot size={28} strokeWidth={1.75} /></div>
             <h3>Sofia Answers, Qualifies &amp; Books</h3>
             <p>Sofia picks up instantly, asks the right questions, checks your real availability, and books the job — all in under 2 minutes.</p>
           </div>
           <div className="step fade-up">
-            <div className="step-num">📅</div>
-            <h3>Job Appears in Your Calendar</h3>
-            <p>The booking syncs to your scheduling software automatically. Wake up to a full calendar — without lifting a finger.</p>
+            <div className="step-num"><LayoutDashboard size={28} strokeWidth={1.75} /></div>
+            <h3>Job Logged in Your Custom CRM</h3>
+            <p>Every booking drops straight into your custom CRM — job type, customer info, time slot — ready for your crew. Wake up to a full schedule, zero admin.</p>
           </div>
         </div>
         <div className="hiw-video">

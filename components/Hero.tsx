@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Check } from 'lucide-react';
 
 export default function Hero() {
   const [callSeconds, setCallSeconds] = useState(0);
@@ -31,7 +32,7 @@ export default function Hero() {
               <span className="highlight">Never Lose<br />Another Job.</span>
             </h1>
             <p className="hero-sub">
-              AI receptionist that answers 24/7, books jobs automatically, and fills your calendar — while you&apos;re on the roof.
+              Sofia answers every call 24/7, qualifies leads, books jobs, and logs everything into your custom CRM — so your business keeps running while your crew is out on the job.
             </p>
             <div className="hero-btns">
               <a href="#how-it-works" className="btn-secondary btn-lg">See How It Works</a>
@@ -75,7 +76,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="phone-booked">
-                  <div className="phone-booked-icon">✓</div>
+                  <div className="phone-booked-icon"><Check size={14} strokeWidth={2.5} color="white" /></div>
                   <div className="phone-booked-text">
                     <div className="phone-booked-title">Job Booked!</div>
                     <div className="phone-booked-sub">Today · 2:00 PM · AC Emergency</div>

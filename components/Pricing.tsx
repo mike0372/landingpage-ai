@@ -1,3 +1,5 @@
+import { Check } from 'lucide-react';
+
 export default function BookingCTA() {
   return (
     <section id="booking-cta">
@@ -33,11 +35,11 @@ export default function BookingCTA() {
           </a>
 
           <div className="cta-trust">
-            <span>✓ No contracts</span>
+            <span className="cta-trust-item"><Check size={13} strokeWidth={2.5} className="cta-trust-check" /> No contracts</span>
             <span className="cta-trust-dot" />
-            <span>✓ Live within 48–72 hrs</span>
+            <span className="cta-trust-item"><Check size={13} strokeWidth={2.5} className="cta-trust-check" /> Live within 48–72 hrs</span>
             <span className="cta-trust-dot" />
-            <span>✓ First install guaranteed</span>
+            <span className="cta-trust-item"><Check size={13} strokeWidth={2.5} className="cta-trust-check" /> First install guaranteed</span>
           </div>
         </div>
 

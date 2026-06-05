@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Check } from 'lucide-react';
 
 export default function BookPhoneDemo() {
   const [callSeconds, setCallSeconds] = useState(0);
@@ -60,7 +61,7 @@ export default function BookPhoneDemo() {
               </div>
             </div>
             <div className="phone-booked">
-              <div className="phone-booked-icon">✓</div>
+              <div className="phone-booked-icon"><Check size={14} strokeWidth={2.5} color="white" /></div>
               <div className="phone-booked-text">
                 <div className="phone-booked-title">Job Booked!</div>
                 <div className="phone-booked-sub">Today · 2:00 PM · AC Emergency</div>
