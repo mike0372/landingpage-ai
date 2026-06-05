@@ -9,18 +9,19 @@ export default function HowItWorks() {
           <h2 className="section-title">Your AI Receptionist. Always On.</h2>
           <p className="section-sub">Set it up once. From that moment, every call is answered, every lead is qualified, every job is booked — automatically.</p>
         </div>
-        <div className="steps-container stagger">
-          <div className="step-connector"></div>
+        <div className="steps-container">
           <div className="step fade-up">
             <div className="step-num"><Phone size={28} strokeWidth={1.75} /></div>
             <h3>Customer Calls Your Number</h3>
             <p>Your existing business number routes directly to AutoPilot AI — no new number, no tech headaches, no changes for customers.</p>
           </div>
+          <div className="step-connector" />
           <div className="step fade-up">
             <div className="step-num"><Bot size={28} strokeWidth={1.75} /></div>
             <h3>Sofia Answers, Qualifies &amp; Books</h3>
             <p>Sofia picks up instantly, asks the right questions, checks your real availability, and books the job — all in under 2 minutes.</p>
           </div>
+          <div className="step-connector" />
           <div className="step fade-up">
             <div className="step-num"><LayoutDashboard size={28} strokeWidth={1.75} /></div>
             <h3>Job Logged in Your Custom CRM</h3>

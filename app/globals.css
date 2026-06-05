@@ -640,44 +640,29 @@ section { padding: 110px 0; }
 .hiw-header .section-sub { margin: 0 auto; }
 
 .steps-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  display: flex;
+  align-items: flex-start;
 }
 
 .step-connector {
-  position: absolute;
-  top: 35px;
-  left: calc(16.67% + 38px);
-  right: calc(16.67% + 38px);
+  flex: 0 0 72px;
   height: 2px;
-}
-
-.step-connector::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, var(--blue), var(--cyan), var(--blue));
-  background-size: 200% 100%;
-  animation: connectorFlow 2.5s linear infinite;
+  margin-top: 37px;
+  background: linear-gradient(90deg, rgba(59,130,246,0.55), rgba(6,182,212,0.5));
+  position: relative;
+  align-self: auto;
 }
 
 .step-connector::after {
   content: '';
   position: absolute;
-  top: -3px;
-  right: -2px;
-  width: 8px;
-  height: 8px;
-  border-top: 2px solid var(--cyan);
-  border-right: 2px solid var(--cyan);
+  right: -5px;
+  top: -4px;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid rgba(6,182,212,0.75);
+  border-right: 2px solid rgba(6,182,212,0.75);
   transform: rotate(45deg);
-}
-
-@keyframes connectorFlow {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
 }
 
 .step {
@@ -691,24 +676,25 @@ section { padding: 110px 0; }
 }
 
 .step-num {
-  width: 72px;
-  height: 72px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
-  background: rgba(59,130,246,0.08);
-  border: 2px solid rgba(59,130,246,0.35);
+  background: linear-gradient(135deg, rgba(59,130,246,0.14) 0%, rgba(6,182,212,0.07) 100%);
+  border: 1.5px solid rgba(59,130,246,0.42);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--blue-light);
   margin-bottom: 28px;
-  box-shadow: 0 0 24px rgba(59,130,246,0.12);
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 0 6px rgba(59,130,246,0.05), 0 0 28px rgba(59,130,246,0.16);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .step:hover .step-num {
-  background: rgba(59,130,246,0.22);
-  box-shadow: 0 0 60px rgba(59,130,246,0.38);
-  transform: scale(1.14) rotate(-4deg);
+  background: linear-gradient(135deg, rgba(59,130,246,0.26) 0%, rgba(6,182,212,0.14) 100%);
+  border-color: rgba(6,182,212,0.65);
+  box-shadow: 0 0 0 8px rgba(59,130,246,0.08), 0 0 56px rgba(59,130,246,0.36);
+  transform: scale(1.08);
 }
 
 .step h3 {
@@ -1534,6 +1520,11 @@ footer {
 .stagger > .fade-up:nth-child(3) { transition-delay: 0.26s; }
 .stagger > .fade-up:nth-child(4) { transition-delay: 0.39s; }
 
+/* Steps container: connectors sit between steps, so steps are children 1, 3, 5 */
+.steps-container > .fade-up:nth-child(1) { transition-delay: 0s; }
+.steps-container > .fade-up:nth-child(3) { transition-delay: 0.13s; }
+.steps-container > .fade-up:nth-child(5) { transition-delay: 0.26s; }
+
 /* ── HERO ENTRANCE ── */
 @keyframes heroFadeUp {
   from { opacity: 0; transform: translateY(44px); }
@@ -1587,7 +1578,8 @@ footer {
   .problem-cards { grid-template-columns: 1fr; }
 
   .steps-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
     gap: 44px;
   }
 
