@@ -21,6 +21,9 @@ export default function BookPage() {
             <p className="book-sub">
               Pick a time that works for you. We&apos;ll walk you through exactly how Sofia answers calls, qualifies leads, and books jobs for an HVAC business like yours — then answer every question you have. No pressure, no commitment.
             </p>
+            <div className="book-step">
+              <div className="book-step-label"><span className="book-step-num">01</span>Watch the demo</div>
+            </div>
             <div className="book-video">
               <iframe
                 src="https://www.youtube.com/embed/KLJErd2Szn0"
@@ -29,10 +32,16 @@ export default function BookPage() {
                 allowFullScreen
               />
             </div>
+            <div className="book-step">
+              <div className="book-step-label"><span className="book-step-num">02</span>Pick a time</div>
+            </div>
             <div className="book-calendar">
               <BookingCalendar />
             </div>
 
+            <div className="book-step">
+              <div className="book-step-label"><span className="book-step-num">03</span>Know what to expect</div>
+            </div>
             <div className="call-expect">
               <div className="call-expect-orb call-expect-orb-1" />
               <div className="call-expect-orb call-expect-orb-2" />
