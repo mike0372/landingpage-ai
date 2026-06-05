@@ -962,13 +962,34 @@
 
       .hero-content {
         grid-template-columns: 1fr;
-        gap: 52px;
+        gap: 0;
         padding: 40px 0 60px;
+        position: relative;
       }
 
-      .hero-phone-wrap { order: -1; }
+      .hero-phone-wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 0.3;
+        pointer-events: none;
+      }
 
-      .phone { width: 230px; height: 460px; }
+      .hero-text-block {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-title { font-size: clamp(28px, 8vw, 42px); letter-spacing: -1.5px; }
+
+      .hero-sub { font-size: 14px; }
+
+      .phone { width: 200px; height: 400px; }
+
+      .phone-glow { width: 240px; height: 240px; }
+      .phone-glow-2 { width: 150px; height: 150px; }
 
       .problem-cards { grid-template-columns: 1fr; }
 
@@ -1032,6 +1053,31 @@
     .faq-cta {
       text-align: center;
     }
+
+    /* ── BOOKING ── */
+    #booking {
+      background: linear-gradient(180deg, var(--bg) 0%, #0d0d0d 100%);
+    }
+
+    .booking-header { text-align: center; margin-bottom: 52px; }
+    .booking-header .section-sub { margin: 0 auto; }
+
+    .booking-widget-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      min-height: 600px;
+    }
+
+    .booking-widget-wrap iframe {
+      width: 100%;
+      min-height: 600px;
+      border: none;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -1044,9 +1090,10 @@
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#results">Results</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li style="display:block;"><a href="#pricing" class="btn-primary">Book a Demo</a></li>
+        <li><a href="#booking">Book Demo</a></li>
+        <li style="display:block;"><a href="#booking" class="btn-primary">Book a Demo</a></li>
       </ul>
-      <a href="#pricing" class="btn-primary nav-cta">Book a Demo</a>
+      <a href="#booking" class="btn-primary nav-cta">Book a Demo</a>
       <div class="hamburger" id="hamburger" onclick="toggleNav()">
         <span></span><span></span><span></span>
       </div>
@@ -1060,7 +1107,7 @@
     <div class="container">
       <div class="hero-content">
 
-        <div>
+        <div class="hero-text-block">
           <div class="hero-badge">
             <span class="dot"></span>
             Built for HVAC Businesses Across the USA
@@ -1074,7 +1121,7 @@
           </p>
           <div class="hero-btns">
             <a href="#how-it-works" class="btn-secondary btn-lg">See How It Works</a>
-            <a href="#pricing" class="btn-primary btn-lg">Book a Free Demo →</a>
+            <a href="#booking" class="btn-primary btn-lg">Book a Free Demo →</a>
           </div>
         </div>
 
@@ -1242,7 +1289,7 @@
             <li><span class="check">✓</span> Monthly performance report</li>
             <li><span class="check">✓</span> Dedicated onboarding call</li>
           </ul>
-          <a href="#" class="btn-secondary pricing-btn">Get Started</a>
+          <a href="#booking" class="btn-secondary pricing-btn">Get Started</a>
           <div class="pricing-guarantee">🛡️ First install guaranteed or full refund</div>
         </div>
 
@@ -1261,7 +1308,7 @@
             <li><span class="check">✓</span> Google Reviews automation</li>
             <li><span class="check">✓</span> CRM integration (ServiceTitan, Jobber)</li>
           </ul>
-          <a href="#" class="btn-primary pricing-btn">Get Started →</a>
+          <a href="#booking" class="btn-primary pricing-btn">Get Started →</a>
           <div class="pricing-guarantee">🛡️ First install guaranteed or full refund</div>
         </div>
 
@@ -1279,7 +1326,7 @@
             <li><span class="check">✓</span> Priority support (&lt;1hr response)</li>
             <li><span class="check">✓</span> Quarterly strategy calls</li>
           </ul>
-          <a href="#" class="btn-secondary pricing-btn">Get Started</a>
+          <a href="#booking" class="btn-secondary pricing-btn">Get Started</a>
           <div class="pricing-guarantee">🛡️ First install guaranteed or full refund</div>
         </div>
 
@@ -1301,7 +1348,25 @@
         </div>
       </div>
       <div class="faq-cta">
-        <a href="#pricing" class="btn-primary btn-lg">Book a Free Demo →</a>
+        <a href="#booking" class="btn-primary btn-lg">Book a Free Demo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOOKING ── -->
+  <section id="booking">
+    <div class="container">
+      <div class="booking-header">
+        <div class="section-label">Book a Demo</div>
+        <h2 class="section-title">See AutoPilot AI in Action</h2>
+        <p class="section-sub">Pick a time that works — we'll show you exactly how it works for your HVAC business in 30 minutes.</p>
+      </div>
+      <div class="booking-widget-wrap fade-up">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/booking/O36Ump0KdtxoELPOrmh2"
+          scrolling="no"
+          id="O36Ump0KdtxoELPOrmh2_1778413305395"
+        ></iframe>
       </div>
     </div>
   </section>
@@ -1315,8 +1380,8 @@
           <div class="footer-tagline">Built for HVAC. Powered by AI.</div>
         </div>
         <div class="footer-right">
-          <a href="https://botwise.digital" class="footer-link" target="_blank" rel="noopener">botwise.digital</a>
-          <div class="footer-copy">© 2025 AutoPilot AI. All rights reserved.</div>
+          <a href="mailto:mihnea@autopilotai.digital" class="footer-link">mihnea@autopilotai.digital</a>
+          <div class="footer-copy">© 2026 AutoPilot AI. All rights reserved.</div>
         </div>
       </div>
     </div>
@@ -1397,5 +1462,6 @@
 
     document.querySelectorAll('.stat-card').forEach(card => statObserver.observe(card));
   </script>
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 </body>
 </html>

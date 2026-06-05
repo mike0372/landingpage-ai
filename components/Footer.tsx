@@ -8,8 +8,8 @@ export default function Footer() {
             <div className="footer-tagline">Built for HVAC. Powered by AI.</div>
           </div>
           <div className="footer-right">
-            <a href="https://autopilotai.digital" className="footer-link" target="_blank" rel="noopener noreferrer">
-              autopilotai.digital
+            <a href="mailto:mihnea@autopilotai.digital" className="footer-link">
+              mihnea@autopilotai.digital
             </a>
             <div className="footer-copy">© 2026 AutoPilot AI. All rights reserved.</div>
           </div>
