@@ -1187,33 +1187,112 @@ section { padding: 110px 0; }
 }
 
 .call-expect {
-  margin-top: 48px;
+  margin-top: 56px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
   text-align: center;
+  padding: 64px 52px;
+  background: rgba(10, 18, 38, 0.88);
+  border: 1px solid rgba(59,130,246,0.28);
+  box-shadow:
+    0 0 0 1px rgba(59,130,246,0.18),
+    0 0 80px rgba(59,130,246,0.12),
+    0 40px 120px rgba(0,0,0,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  animation: callExpectEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+@keyframes callExpectEntrance {
+  from { opacity: 0; transform: translateY(32px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.call-expect-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(64px);
+}
+
+.call-expect-orb-1 {
+  width: 520px;
+  height: 520px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  background: radial-gradient(circle, rgba(59,130,246,0.32) 0%, transparent 65%);
+  animation: callExpectOrb1 9s ease-in-out infinite alternate;
+}
+
+.call-expect-orb-2 {
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, -50%);
+  background: radial-gradient(circle, rgba(6,182,212,0.26) 0%, transparent 65%);
+  animation: callExpectOrb2 7s ease-in-out infinite alternate;
+}
+
+@keyframes callExpectOrb1 {
+  0%   { transform: translate(-75%, -55%) scale(1); }
+  100% { transform: translate(-68%, -45%) scale(1.18); }
+}
+
+@keyframes callExpectOrb2 {
+  0%   { transform: translate(20%, -45%) scale(1); }
+  100% { transform: translate(14%, -57%) scale(1.12); }
+}
+
+.call-expect-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 85% 75% at 50% 50%, black 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.call-expect-card-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 100% 60% at 50% 110%, rgba(59,130,246,0.15) 0%, transparent 65%);
+  pointer-events: none;
 }
 
 .call-expect-heading {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--text-dim);
-  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(147,197,253,0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .call-expect-items {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   gap: 0;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .call-expect-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 0 36px;
-  border-right: 1px solid var(--border);
+  gap: 10px;
+  padding: 0 48px;
+  border-right: 1px solid rgba(59,130,246,0.2);
 }
 
 .call-expect-item:last-child {
@@ -1223,37 +1302,41 @@ section { padding: 110px 0; }
 .call-expect-icon {
   color: var(--blue);
   flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(59,130,246,0.5));
 }
 
 .call-expect-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-muted);
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
   white-space: nowrap;
 }
 
 .call-expect-text {
-  font-size: 12.5px;
-  color: var(--text-dim);
-  line-height: 1.5;
-  max-width: 180px;
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  max-width: 200px;
 }
 
 .call-expect-guarantee {
-  font-size: 12px;
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
   color: var(--text-dim);
   font-style: italic;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
+  .call-expect { padding: 44px 28px; }
   .call-expect-items {
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
   }
   .call-expect-item {
     border-right: none;
-    border-bottom: 1px solid var(--border);
-    padding: 0 0 24px;
+    border-bottom: 1px solid rgba(59,130,246,0.15);
+    padding: 0 0 28px;
   }
   .call-expect-item:last-child {
     border-bottom: none;
