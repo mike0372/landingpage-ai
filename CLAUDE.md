@@ -4,28 +4,42 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Single-file landing page for **AutoPilot AI** — an AI receptionist product targeting HVAC businesses in the USA. Everything lives in `index.html` (inline CSS + JS, no build step, no dependencies except Google Fonts).
+Landing page for **AutoPilot AI** — an AI receptionist product targeting HVAC businesses in the USA. Built with **Next.js 15** (App Router, React 19, TypeScript). Deployed on Vercel with `@vercel/analytics`.
+
+Fonts are `next/font/google` (Geist, Geist Mono, Instrument Serif). Icons are `lucide-react`.
+
+> Note: a legacy standalone `index.html` still exists at the repo root but is not part of the Next.js build — the live site is the `app/` code below.
 
 ## Running
 
-Open `index.html` directly in a browser — no server needed.
+```bash
+npm run dev      # dev server (Turbopack)
+npm run build    # production build
+npm run start    # serve production build
+npm run lint     # next lint
+```
 
 ## Architecture
 
-All code is in one file with three logical blocks:
-
-1. **`<style>`** — CSS custom properties at `:root`, then sections in order: navbar → hero → problem → how-it-works → results → pricing → footer → animations → responsive breakpoints.
-2. **`<body>`** — Seven sections matching the CSS order. Scroll-animated elements use class `fade-up`; stat cards use `data-target`, `data-prefix`, `data-suffix` attributes for count-up.
-3. **`<script>`** — Three behaviors: nav scroll effect, `IntersectionObserver` for `.fade-up` reveal, `IntersectionObserver` for count-up on `.stat-card`.
+- **`app/layout.tsx`** — root layout: font variables, metadata, `<Analytics />`.
+- **`app/page.tsx`** — home page. Composes section components in order: Navbar → Hero → Problem → HowItWorks → Results → Pricing (exported as `BookingCTA`) → FAQ → Footer, plus `ScrollAnimations`.
+- **`app/book/page.tsx`** — booking page (`/book`).
+- **`app/globals.css`** — all styling: CSS custom properties at `:root`, then per-section rules (selectors like `#how-it-works`, `#faq`) and responsive breakpoints.
+- **`components/`** — one file per section (`Hero.tsx`, `Problem.tsx`, etc.) plus booking widgets (`BookingCalendar.tsx`, `BookNavbar.tsx`, `BookPhoneDemo.tsx`).
+- **`components/ScrollAnimations.tsx`** — client component running the `IntersectionObserver` behaviors: `.fade-up` reveal, nav scroll effect, count-up on stat cards (`data-target`, `data-prefix`, `data-suffix`).
 
 ## Design tokens
 
-| Token | Value |
-|---|---|
-| Background | `#0a0a0a` |
-| Surface | `#111111` |
-| Accent blue | `#3b82f6` |
-| Accent cyan | `#06b6d4` |
-| Font | Inter (Google Fonts) |
+Defined in `app/globals.css` `:root`:
+
+| Token | Var | Value |
+|---|---|---|
+| Background | `--bg` | `#0a0a0a` |
+| Surface | `--surface` | `#111111` |
+| Surface 2 | `--surface2` | `#1a1a1a` |
+| Border | `--border` | `#222222` |
+| Accent blue | `--blue` | `#3b82f6` |
+| Accent cyan | `--cyan` | `#06b6d4` |
+| Fonts | `--font-geist` / `--font-mono` / `--font-serif` | Geist / Geist Mono / Instrument Serif |
 
 Hero background uses a CSS `@keyframes heroBgShift` animation on layered `radial-gradient`s — edit that keyframe to change the ambient glow motion.
