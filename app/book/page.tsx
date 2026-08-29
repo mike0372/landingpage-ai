@@ -5,7 +5,7 @@ import BookingCalendar from "@/components/BookingCalendar";
 import { Clock, Monitor, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Book a Free Demo — AutoPilot AI",
+  title: "Book a Free Demo — SystemCall AI",
   description: "See Sofia in action. In 30 minutes we'll show you exactly how she answers calls, books jobs, and pays for itself — live.",
 };
 
@@ -43,7 +43,7 @@ export default function BookPage() {
             <div className="book-video">
               <iframe
                 src="https://www.youtube.com/embed/KLJErd2Szn0"
-                title="AutoPilot AI Demo"
+                title="SystemCall AI Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />

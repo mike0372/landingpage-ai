@@ -21,7 +21,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "AutoPilot AI — Never Miss Another Call",
+  title: "SystemCall AI — Never Miss Another Call",
   description:
     "AI receptionist that answers 24/7, books jobs automatically, and fills your calendar — while you're on the roof.",
 };

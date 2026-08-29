@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
       <div className="container nav-inner">
-        <a href="#hero" className="logo">AutoPilot <span>AI</span></a>
+        <a href="#hero" className="logo">SystemCall <span>AI</span></a>
         <ul className={`nav-links${navOpen ? ' open' : ''}`} id="navLinks">
           <li><a href="#problem" onClick={closeNav}>Problem</a></li>
           <li><a href="#how-it-works" onClick={closeNav}>How It Works</a></li>

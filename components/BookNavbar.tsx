@@ -5,7 +5,7 @@ export default function BookNavbar() {
     <nav>
       <div className="container">
         <div className="nav-inner">
-          <Link href="/" className="logo">AutoPilot <span>AI</span></Link>
+          <Link href="/" className="logo">SystemCall <span>AI</span></Link>
         </div>
       </div>
     </nav>

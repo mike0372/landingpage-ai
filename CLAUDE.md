@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Landing page for **AutoPilot AI** — an AI receptionist product targeting HVAC businesses in the USA. Built with **Next.js 15** (App Router, React 19, TypeScript). Deployed on Vercel with `@vercel/analytics`.
+Landing page for **SystemCall AI** — an AI receptionist product targeting HVAC businesses in the USA. Built with **Next.js 15** (App Router, React 19, TypeScript). Deployed on Vercel with `@vercel/analytics`.
 
 Fonts are `next/font/google` (Geist, Geist Mono, Instrument Serif). Icons are `lucide-react`.
 
@@ -38,8 +38,8 @@ Defined in `app/globals.css` `:root`:
 | Surface | `--surface` | `#111111` |
 | Surface 2 | `--surface2` | `#1a1a1a` |
 | Border | `--border` | `#222222` |
-| Accent blue | `--blue` | `#3b82f6` |
-| Accent cyan | `--cyan` | `#06b6d4` |
+| Accent orange | `--orange` | `#e8590c` |
+| Accent amber | `--amber` | `#f5a623` |
 | Fonts | `--font-geist` / `--font-mono` / `--font-serif` | Geist / Geist Mono / Instrument Serif |
 
 Hero background uses a CSS `@keyframes heroBgShift` animation on layered `radial-gradient`s — edit that keyframe to change the ambient glow motion.

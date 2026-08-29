@@ -22,7 +22,7 @@ export default function BookingCTA() {
           </h2>
 
           <p className="cta-sub">
-            20 minutes. We&apos;ll walk through your current setup, show you exactly how AutoPilot handles your calls, and tell you what it would cost. No pitch decks. No pressure.
+            20 minutes. We&apos;ll walk through your current setup, show you exactly how SystemCall handles your calls, and tell you what it would cost. No pitch decks. No pressure.
           </p>
 
           <a

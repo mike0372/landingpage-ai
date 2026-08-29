@@ -5,7 +5,7 @@ export default function Results() {
         <div className="results-header">
           <div className="section-label">Results</div>
           <h2 className="section-title">Numbers That Move the Needle</h2>
-          <p className="section-sub">HVAC owners using AutoPilot AI see dramatic shifts in revenue and operations within the first 30 days.</p>
+          <p className="section-sub">HVAC owners using SystemCall AI see dramatic shifts in revenue and operations within the first 30 days.</p>
         </div>
         <div className="stats-grid stagger">
           <div className="stat-card fade-up">

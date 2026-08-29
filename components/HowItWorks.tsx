@@ -13,7 +13,7 @@ export default function HowItWorks() {
           <div className="step fade-up">
             <div className="step-num"><Phone size={28} strokeWidth={1.75} /></div>
             <h3>Customer Calls Your Number</h3>
-            <p>Your existing business number routes directly to AutoPilot AI — no new number, no tech headaches, no changes for customers.</p>
+            <p>Your existing business number routes directly to SystemCall AI — no new number, no tech headaches, no changes for customers.</p>
           </div>
           <div className="step-connector" />
           <div className="step fade-up">

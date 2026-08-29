@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoPilot AI — Never Miss Another Call</title>
+  <title>SystemCall AI — Never Miss Another Call</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,10 +13,10 @@
       --surface: #111111;
       --surface2: #1a1a1a;
       --border: #222222;
-      --blue: #3b82f6;
-      --blue-dark: #2563eb;
-      --blue-light: #60a5fa;
-      --cyan: #06b6d4;
+      --orange: #e8590c;
+      --orange-dark: #c2440a;
+      --orange-light: #ff9a56;
+      --amber: #f5a623;
       --text: #ffffff;
       --text-muted: #9ca3af;
       --text-dim: #6b7280;
@@ -70,7 +70,7 @@
       text-decoration: none;
     }
 
-    .logo span { color: var(--blue); }
+    .logo span { color: var(--orange); }
 
     .nav-links {
       display: flex;
@@ -90,7 +90,7 @@
     .nav-links a:hover { color: white; }
 
     .btn-primary {
-      background: var(--blue);
+      background: var(--orange);
       color: white;
       padding: 10px 20px;
       border-radius: 8px;
@@ -103,12 +103,12 @@
       align-items: center;
       gap: 6px;
       transition: all 0.2s;
-      box-shadow: 0 0 20px rgba(59,130,246,0.3);
+      box-shadow: 0 0 20px rgba(232,89,12,0.3);
     }
 
     .btn-primary:hover {
-      background: var(--blue-dark);
-      box-shadow: 0 0 32px rgba(59,130,246,0.5);
+      background: var(--orange-dark);
+      box-shadow: 0 0 32px rgba(232,89,12,0.5);
       transform: translateY(-1px);
     }
 
@@ -129,9 +129,9 @@
     }
 
     .btn-secondary:hover {
-      border-color: var(--blue);
-      color: var(--blue-light);
-      background: rgba(59,130,246,0.06);
+      border-color: var(--orange);
+      color: var(--orange-light);
+      background: rgba(232,89,12,0.06);
     }
 
     .hamburger {
@@ -169,23 +169,23 @@
     @keyframes heroBgShift {
       0% {
         background:
-          radial-gradient(ellipse 80% 60% at 50% -10%, rgba(59,130,246,0.18) 0%, transparent 65%),
-          radial-gradient(ellipse 50% 40% at 85% 55%, rgba(6,182,212,0.10) 0%, transparent 60%),
-          radial-gradient(ellipse 40% 35% at 15% 85%, rgba(59,130,246,0.08) 0%, transparent 60%),
+          radial-gradient(ellipse 80% 60% at 50% -10%, rgba(232,89,12,0.18) 0%, transparent 65%),
+          radial-gradient(ellipse 50% 40% at 85% 55%, rgba(245,166,35,0.10) 0%, transparent 60%),
+          radial-gradient(ellipse 40% 35% at 15% 85%, rgba(232,89,12,0.08) 0%, transparent 60%),
           var(--bg);
       }
       50% {
         background:
-          radial-gradient(ellipse 80% 60% at 42% -5%, rgba(59,130,246,0.22) 0%, transparent 65%),
-          radial-gradient(ellipse 50% 40% at 90% 42%, rgba(6,182,212,0.14) 0%, transparent 60%),
-          radial-gradient(ellipse 40% 35% at 10% 92%, rgba(59,130,246,0.12) 0%, transparent 60%),
+          radial-gradient(ellipse 80% 60% at 42% -5%, rgba(232,89,12,0.22) 0%, transparent 65%),
+          radial-gradient(ellipse 50% 40% at 90% 42%, rgba(245,166,35,0.14) 0%, transparent 60%),
+          radial-gradient(ellipse 40% 35% at 10% 92%, rgba(232,89,12,0.12) 0%, transparent 60%),
           var(--bg);
       }
       100% {
         background:
-          radial-gradient(ellipse 80% 60% at 58% -18%, rgba(59,130,246,0.14) 0%, transparent 65%),
-          radial-gradient(ellipse 50% 40% at 75% 62%, rgba(6,182,212,0.07) 0%, transparent 60%),
-          radial-gradient(ellipse 40% 35% at 25% 75%, rgba(59,130,246,0.10) 0%, transparent 60%),
+          radial-gradient(ellipse 80% 60% at 58% -18%, rgba(232,89,12,0.14) 0%, transparent 65%),
+          radial-gradient(ellipse 50% 40% at 75% 62%, rgba(245,166,35,0.07) 0%, transparent 60%),
+          radial-gradient(ellipse 40% 35% at 25% 75%, rgba(232,89,12,0.10) 0%, transparent 60%),
           var(--bg);
       }
     }
@@ -215,13 +215,13 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(59,130,246,0.08);
-      border: 1px solid rgba(59,130,246,0.28);
+      background: rgba(232,89,12,0.08);
+      border: 1px solid rgba(232,89,12,0.28);
       border-radius: 100px;
       padding: 6px 16px;
       font-size: 12.5px;
       font-weight: 500;
-      color: var(--blue-light);
+      color: var(--orange-light);
       margin-bottom: 28px;
     }
 
@@ -229,8 +229,8 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: var(--blue);
-      box-shadow: 0 0 8px var(--blue);
+      background: var(--orange);
+      box-shadow: 0 0 8px var(--orange);
       animation: dotPulse 2s ease-in-out infinite;
     }
 
@@ -248,7 +248,7 @@
     }
 
     .hero-title .highlight {
-      background: linear-gradient(135deg, var(--blue) 0%, var(--cyan) 100%);
+      background: linear-gradient(135deg, var(--orange) 0%, var(--amber) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -286,7 +286,7 @@
       position: absolute;
       width: 340px;
       height: 340px;
-      background: radial-gradient(circle, rgba(59,130,246,0.22) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(232,89,12,0.22) 0%, transparent 70%);
       animation: glowPulse 3.5s ease-in-out infinite;
       pointer-events: none;
     }
@@ -295,7 +295,7 @@
       position: absolute;
       width: 200px;
       height: 200px;
-      background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(245,166,35,0.15) 0%, transparent 70%);
       animation: glowPulse 3.5s ease-in-out infinite reverse;
       pointer-events: none;
     }
@@ -313,7 +313,7 @@
       border-radius: 42px;
       border: 1.5px solid rgba(255,255,255,0.08);
       box-shadow:
-        0 0 0 1px rgba(59,130,246,0.25),
+        0 0 0 1px rgba(232,89,12,0.25),
         0 50px 100px rgba(0,0,0,0.85),
         inset 0 1px 0 rgba(255,255,255,0.04);
       animation: phoneFloat 4.5s ease-in-out infinite;
@@ -346,7 +346,7 @@
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      background: linear-gradient(135deg, var(--orange), var(--amber));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -403,9 +403,9 @@
     }
 
     .msg-ai {
-      background: rgba(59,130,246,0.13);
-      border: 1px solid rgba(59,130,246,0.2);
-      color: #bfdbfe;
+      background: rgba(232,89,12,0.13);
+      border: 1px solid rgba(232,89,12,0.2);
+      color: #ffd8b3;
       align-self: flex-start;
       border-radius: 4px 12px 12px 12px;
     }
@@ -430,8 +430,8 @@
       align-items: center;
       gap: 4px;
       padding: 9px 12px;
-      background: rgba(59,130,246,0.1);
-      border: 1px solid rgba(59,130,246,0.15);
+      background: rgba(232,89,12,0.1);
+      border: 1px solid rgba(232,89,12,0.15);
       border-radius: 4px 12px 12px 12px;
       width: fit-content;
     }
@@ -440,7 +440,7 @@
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background: var(--blue-light);
+      background: var(--orange-light);
       animation: typingDot 1.4s ease-in-out infinite;
     }
 
@@ -487,7 +487,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2.5px;
-      color: var(--blue);
+      color: var(--orange);
       margin-bottom: 14px;
     }
 
@@ -608,7 +608,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, var(--blue), var(--cyan), var(--blue));
+      background: linear-gradient(90deg, var(--orange), var(--amber), var(--orange));
       background-size: 200% 100%;
       animation: connectorFlow 2.5s linear infinite;
     }
@@ -620,8 +620,8 @@
       right: -2px;
       width: 8px;
       height: 8px;
-      border-top: 2px solid var(--cyan);
-      border-right: 2px solid var(--cyan);
+      border-top: 2px solid var(--amber);
+      border-right: 2px solid var(--amber);
       transform: rotate(45deg);
     }
 
@@ -644,20 +644,20 @@
       width: 72px;
       height: 72px;
       border-radius: 50%;
-      background: rgba(59,130,246,0.08);
-      border: 2px solid rgba(59,130,246,0.35);
+      background: rgba(232,89,12,0.08);
+      border: 2px solid rgba(232,89,12,0.35);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 30px;
       margin-bottom: 28px;
-      box-shadow: 0 0 24px rgba(59,130,246,0.12);
+      box-shadow: 0 0 24px rgba(232,89,12,0.12);
       transition: all 0.3s;
     }
 
     .step:hover .step-num {
-      background: rgba(59,130,246,0.18);
-      box-shadow: 0 0 48px rgba(59,130,246,0.28);
+      background: rgba(232,89,12,0.18);
+      box-shadow: 0 0 48px rgba(232,89,12,0.28);
       transform: scale(1.07);
     }
 
@@ -703,20 +703,20 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 80% 50% at 50% 110%, rgba(59,130,246,0.1) 0%, transparent 70%);
+      background: radial-gradient(ellipse 80% 50% at 50% 110%, rgba(232,89,12,0.1) 0%, transparent 70%);
       pointer-events: none;
     }
 
     .stat-card:hover {
-      border-color: rgba(59,130,246,0.4);
+      border-color: rgba(232,89,12,0.4);
       transform: translateY(-5px);
-      box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 40px rgba(59,130,246,0.1);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 40px rgba(232,89,12,0.1);
     }
 
     .stat-value {
       font-size: clamp(30px, 3vw, 42px);
       font-weight: 900;
-      background: linear-gradient(135deg, #fff 0%, var(--blue-light) 100%);
+      background: linear-gradient(135deg, #fff 0%, var(--orange-light) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -760,15 +760,15 @@
     }
 
     .pricing-card.featured {
-      background: linear-gradient(170deg, rgba(59,130,246,0.09) 0%, var(--surface) 60%);
-      border-color: rgba(59,130,246,0.45);
-      box-shadow: 0 0 0 1px rgba(59,130,246,0.18), 0 0 70px rgba(59,130,246,0.12);
+      background: linear-gradient(170deg, rgba(232,89,12,0.09) 0%, var(--surface) 60%);
+      border-color: rgba(232,89,12,0.45);
+      box-shadow: 0 0 0 1px rgba(232,89,12,0.18), 0 0 70px rgba(232,89,12,0.12);
       transform: translateY(-10px);
     }
 
     .pricing-card.featured:hover {
       transform: translateY(-16px);
-      box-shadow: 0 0 0 1px rgba(59,130,246,0.3), 0 0 90px rgba(59,130,246,0.2);
+      box-shadow: 0 0 0 1px rgba(232,89,12,0.3), 0 0 90px rgba(232,89,12,0.2);
     }
 
     .pricing-badge {
@@ -776,7 +776,7 @@
       top: -15px;
       left: 50%;
       transform: translateX(-50%);
-      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      background: linear-gradient(135deg, var(--orange), var(--amber));
       color: white;
       font-size: 11px;
       font-weight: 800;
@@ -848,7 +848,7 @@
     }
 
     .pricing-features li .check {
-      color: var(--blue);
+      color: var(--orange);
       font-weight: 700;
       flex-shrink: 0;
       margin-top: 1px;
@@ -895,7 +895,7 @@
       text-decoration: none;
     }
 
-    .footer-logo span { color: var(--blue); }
+    .footer-logo span { color: var(--orange); }
 
     .footer-tagline {
       font-size: 13px;
@@ -907,7 +907,7 @@
 
     .footer-link {
       font-size: 13px;
-      color: var(--blue-light);
+      color: var(--orange-light);
       text-decoration: none;
       transition: color 0.2s;
       font-weight: 500;
@@ -1085,7 +1085,7 @@
   <!-- ── NAVBAR ── -->
   <nav id="navbar">
     <div class="container nav-inner">
-      <a href="#hero" class="logo">AutoPilot <span>AI</span></a>
+      <a href="#hero" class="logo">SystemCall <span>AI</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#results">Results</a></li>
@@ -1135,14 +1135,14 @@
               <div class="phone-header">
                 <div class="phone-avatar">AI</div>
                 <div class="phone-contact">
-                  <div class="phone-contact-name">AutoPilot AI Receptionist</div>
+                  <div class="phone-contact-name">SystemCall AI Receptionist</div>
                   <div class="phone-contact-status">Active call</div>
                 </div>
                 <div class="call-timer" id="callTimer">0:00</div>
               </div>
               <div class="phone-messages">
                 <div class="msg msg-ai">
-                  <div class="msg-label">AutoPilot AI</div>
+                  <div class="msg-label">SystemCall AI</div>
                   Thanks for calling Air Pro HVAC! Is this an emergency repair or a new install?
                 </div>
                 <div class="msg msg-user">
@@ -1150,7 +1150,7 @@
                   My AC stopped working — it's 97°F outside
                 </div>
                 <div class="msg msg-ai">
-                  <div class="msg-label">AutoPilot AI</div>
+                  <div class="msg-label">SystemCall AI</div>
                   Got it — emergency repair. I have a tech available today at 2 PM or 4 PM. Which works?
                 </div>
                 <div class="msg msg-user">
@@ -1220,12 +1220,12 @@
         <div class="step fade-up">
           <div class="step-num">📞</div>
           <h3>Customer Calls Your Number</h3>
-          <p>Your existing business number routes directly to AutoPilot AI — no new number, no tech headaches, no changes for customers.</p>
+          <p>Your existing business number routes directly to SystemCall AI — no new number, no tech headaches, no changes for customers.</p>
         </div>
         <div class="step fade-up">
           <div class="step-num">🤖</div>
           <h3>AI Answers, Qualifies & Books</h3>
-          <p>AutoPilot picks up instantly, asks the right questions, checks your real availability, and books the job — all in under 2 minutes.</p>
+          <p>SystemCall picks up instantly, asks the right questions, checks your real availability, and books the job — all in under 2 minutes.</p>
         </div>
         <div class="step fade-up">
           <div class="step-num">📅</div>
@@ -1242,7 +1242,7 @@
       <div class="results-header">
         <div class="section-label">Results</div>
         <h2 class="section-title">Numbers That Move the Needle</h2>
-        <p class="section-sub">HVAC owners using AutoPilot AI see dramatic shifts in revenue and operations within the first 30 days.</p>
+        <p class="section-sub">HVAC owners using SystemCall AI see dramatic shifts in revenue and operations within the first 30 days.</p>
       </div>
       <div class="stats-grid stagger">
         <div class="stat-card fade-up">
@@ -1358,7 +1358,7 @@
     <div class="container">
       <div class="booking-header">
         <div class="section-label">Book a Demo</div>
-        <h2 class="section-title">See AutoPilot AI in Action</h2>
+        <h2 class="section-title">See SystemCall AI in Action</h2>
         <p class="section-sub">Pick a time that works — we'll show you exactly how it works for your HVAC business in 30 minutes.</p>
       </div>
       <div class="booking-widget-wrap fade-up">
@@ -1376,12 +1376,12 @@
     <div class="container">
       <div class="footer-inner">
         <div>
-          <a href="#hero" class="footer-logo">AutoPilot <span>AI</span></a>
+          <a href="#hero" class="footer-logo">SystemCall <span>AI</span></a>
           <div class="footer-tagline">Built for HVAC. Powered by AI.</div>
         </div>
         <div class="footer-right">
-          <a href="mailto:mihnea@autopilotai.digital" class="footer-link">mihnea@autopilotai.digital</a>
-          <div class="footer-copy">© 2026 AutoPilot AI. All rights reserved.</div>
+          <a href="mailto:mihnea@getsystemcall.com" class="footer-link">mihnea@getsystemcall.com</a>
+          <div class="footer-copy">© 2026 SystemCall AI. All rights reserved.</div>
         </div>
       </div>
     </div>
