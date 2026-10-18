@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import BookNavbar from "@/components/BookNavbar";
 import Footer from "@/components/Footer";
 import BookingCalendar from "@/components/BookingCalendar";
+import DemoShowcase from "@/components/DemoShowcase";
 import { Clock, Monitor, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -40,14 +41,7 @@ export default function BookPage() {
             <div className="book-step">
               <div className="book-step-label"><span className="book-step-num">01</span>Watch the demo</div>
             </div>
-            <div className="book-video">
-              <iframe
-                src="https://www.youtube.com/embed/KLJErd2Szn0"
-                title="SystemCall AI Demo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
+            <DemoShowcase />
             <div className="book-step">
               <div className="book-step-label"><span className="book-step-num">02</span>Pick a time</div>
             </div>

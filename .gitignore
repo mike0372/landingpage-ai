@@ -30,3 +30,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw 521MB source video (compressed copy lives in public/media)
+/AI Receptionist Demo v2.mp4

@@ -1,4 +1,5 @@
 import { Phone, Bot, LayoutDashboard } from 'lucide-react';
+import DemoShowcase from './DemoShowcase';
 
 export default function HowItWorks() {
   return (
@@ -28,14 +29,7 @@ export default function HowItWorks() {
             <p>Every booking drops straight into your custom CRM — job type, customer info, time slot — ready for your crew. Wake up to a full schedule, zero admin.</p>
           </div>
         </div>
-        <div className="hiw-video">
-          <iframe
-            src="https://www.youtube.com/embed/KLJErd2Szn0"
-            title="How Sofia Works"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-        </div>
+        <DemoShowcase />
         <div className="section-cta">
           <a href="/book" className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Free Demo →</a>
         </div>
