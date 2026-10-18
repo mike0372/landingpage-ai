@@ -29,7 +29,7 @@ export default function DemoShowcase() {
         </div>
         <div className="demo-screen" role="tabpanel">
           {TABS.map((t, i) => (
-            <Image key={t.src} src={t.src} alt={t.alt} fill sizes="(max-width: 768px) 92vw, 700px" quality={80} className={i === active ? 'on' : ''} aria-hidden={i !== active} />
+            <Image key={t.src} src={t.src} alt={t.alt} fill sizes="(max-width: 768px) 92vw, 800px" quality={90} className={i === active ? 'on' : ''} aria-hidden={i !== active} />
           ))}
         </div>
         <figcaption>The booked job lands in your CRM</figcaption>
